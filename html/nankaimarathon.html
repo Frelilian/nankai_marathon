@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta name="wap-font-scale" content="no">
+    <title>南开大学马拉松社官网</title>
+    <meta name="keywords" content="南开大学，马拉松，跑团，跑友，跑步，跑步社区，跑步爱好，跑步爱好社区">
+    <meta name="description" content="南开大学马拉松社官方网站">
+    <style type="text/css">.style{color:gray;}</style>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style type="text/css" media="screen">#bxid1 {visibility:hidden}</style>
+    <style>
+        .xianlu {
+          overflow: hidden;
+        }
+        .divleft, .divright {
+          display: inline-block;
+          width: 20%;
+          margin-left: auto;
+          margin-right: auto;
+          color: #444;
+          white-space: nowrap;
+        }
+      </style>
+    <script type="text/javascript">
+        (function($){
+	$(function(){
+		var endTime = new Date($('#flip-counter').data('date'));
+		var finished = false;
+		var countdown = $.Countdown({
+			endTime:endTime,
+			afterFinish: function() {
+				finished = true;
+			}
+		});
+		var myCounter = new flipCounter('flip-counter', {
+			dateFormat:true,
+			value:countdown.toString(),
+			auto:false,
+			tFH:20,
+			bFH:20,
+			bOffset:200,
+			fW:30,
+			speed:40
+			});
+		var intervalId = setInterval(function() {
+			if (finished) {
+				clearInterval(intervalId);
+				return;
+			}
+			countdown.update();
+			myCounter.setValue(countdown.toString())
+		}, 1000);
+	});
+})(jQuery)
+
+    </script>
+    <style> .divWebMenu .menuItem .aItem{ width:200px;}</style>
+</head>
+<body class = "bdIndex" style="background-color: f8f9fa;">
+    <div class="divPageMain" style = "background-image:none;">
+        <div style="background-color:#333; height:0px; padding:0px; width:100%; color:#FFF">
+            <div style="width:1200px; position:relative; margin-left:auto; margin-right:auto; font-size:14px">
+            </div>
+        </div>
+        <div style="background-color:#E50012; width:100%"><img src="..//img/改.png" width="100%"></div>
+        <div class = "divPageMainTop" style = "height:40px; background-color:#E8E8E8; border-bottom:#ccc solid 1px;">
+                <div class="divWebMenu" style="width:100%; margin-left:auto; margin-right:auto;">
+                    <div class="menuItem"style="width:100%;">
+                        <div class="menuItem menuItem_0 menuItem_first" style="width:12%; margin-left: 21%; margin-right: auto;">
+                        <a class="aItem" href="">赛事首页</a>
+                        </div>
+                        <div class="menuItem menuiItem_1"style="width:12%">
+                        <a class="aItem" href="">参赛指南</a>
+                        </div>
+                        <div class="menuItem menuiItem_2" style="width:12%;">
+                        <a class="aItem" href="">赛事赞助</a>
+                        </div>
+                        <div class="menuItem menuiItem_3" style="width:12%">
+                        <a class="aItem" href="">在线报名</a>
+                        </div>
+                        <div class="menuItem menuiItem_4" style="width:12%;margin-right: 13%;">
+                        <a class="aItem" href="">联系我们</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="width:100%; clear:both; height:10px;"></div>
+        <div class="divPageMainMiddle" style="min-height: 463px;">
+          
+            <div class="slider-container">
+                <div class="slider">
+                  <img src="../img/middle1.jpg" alt="Image 1">
+                  <img src="../img/middle2.jpg" alt="Image 2">
+                  <img src="../img/middle3.jpg" alt="Image 3">
+                </div>
+                <button class="prev" onclick="prevSlide()">Prev</button>
+                <button class="next" onclick="nextSlide()">Next</button>
+              </div>
+              
+              <script>
+                let slideIndex = 0;
+                const slides = document.querySelectorAll('.slider img');
+                const totalSlides = slides.length;
+                
+                function showSlides() {
+                    slides.forEach(slide => slide.style.display = "none");
+                    slides[slideIndex].style.display = "block";
+                    slideIndex = (slideIndex + 1) % totalSlides; // 自动切换到下一张图片
+                }
+                
+                function nextSlide() {
+                    slideIndex = (slideIndex + 1) % totalSlides;
+                    showSlides();
+                }
+                
+                function prevSlide() {
+                    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+                    showSlides();
+                }
+                
+                setInterval(showSlides, 3000); // 每隔3秒自动切换到下一张图片
+                
+                showSlides(); // 初始化显示第一张图片
+            </script>
+        </div> 
+            <div style="width:1180px; background-color:#f8f9fa ; padding:10px; margin-left: auto; margin-right: auto;">                      
+            </div>
+            
+            <div class="container" style="display: flex;">
+        <div class ="xianlu" style="margin-left: 240px; width:850px;height:400px;background-color: #FFF;display:inline-block；">
+            <div class = "news" style="margin-left: 250px; width:500px; display:block;  padding: 5px; float: right; background-color: #fff;">
+                <a href="#" style="margin-left:200px;font-size:22px; font-weight:bold; text-decoration:none; color:#000">赛事新闻</a>
+                <hr class="line">
+            </div>
+            <div class="divleft" style =  "margin-left:25px;display:inline-block;">
+                 <a target="_blank" href="javascript:void(0)"><img width=350px height=300px  src="../img/left1.jpg" > </a>
+
+            </div>
+
+            <div class="divright" style="width: 350px; height:300px; margin-left: 190px; display:inline-block" >          
+                   
+                        <div class="news-item">
+                            <a href="" class="aItem">
+                                
+                                <span class="t">
+                                    <span class="date">07</span> <!-- 日 -->
+                                    <span class="year-month">2024-04</span> <!-- 年月 -->
+                                </span>
+                                <span class="spAnn">证书下载|扫描二维码下载参赛证书-2024南开半程马拉松</span>
+                            </a>
+                        </div> 
+                        <div style="width:auto; background-color:#fff ; padding:5px; margin-left: auto; margin-right: auto;">                      
+                        </div>
+                       <div><a href="" class="aItem">
+                       
+                        <span class="t">
+                            <span class="date">03</span> <!-- 日 -->
+                            <span class="year-month">2024-05</span> <!-- 年月 -->
+                        </span>
+                        <span class="spAnn">领物须知</span>
+                    </a></div> 
+                    <div style="width:auto; background-color:#fff ; padding:5px; margin-left: auto; margin-right: auto;">                      
+                    </div>
+                    <div><a href="" class="aItem">
+                        
+                        <span class="t">
+                            <span class="date">01</span> <!-- 日 -->
+                            <span class="year-month">2024-05</span> <!-- 年月 -->
+                        </span>
+                        <span class="spAnn">参赛指南</span>
+                    </a></div>
+                    <div style="width:auto; background-color:#fff ; padding:5px; margin-left: auto; margin-right: auto;">                      
+                    </div>
+                    <div><a href="" class="aItem">
+                        
+                        <span class="t">
+                            <span class="date">13</span> <!-- 日 -->
+                            <span class="year-month">2024-04</span> <!-- 年月 -->
+                        </span>
+                        <span class="spAnn">先睹为快|首届南开大学半程马拉松</span>
+                    </a></div>
+                        </div>
+                 
+               
+            </div>
+         
+            <div class = "baoming" style ="width:350px; height:400px;margin-left: 10px ;display: inline-block;">
+                
+                <div style="width:350px;height:40px;background-color: #3b3838;color: #fff; text-align: center ;padding-bottom:2%;display:inline-block;"><p>南开半程马拉松</p>
+                </div>
+                
+       
+                    <div class="countdown-container">
+                        <div class="countdown-item" id="days"></div>
+                        <div class="countdown-item" id="hours"></div>
+                        <div class="countdown-item" id="minutes"></div>
+                        <div class="countdown-item" id="seconds"></div>
+                    </div>
+                
+                <script>
+                    // 目标日期和时间（年、月、日、小时、分钟、秒）
+                    const targetDate = new Date('2024-06-31T00:00:00').getTime();
+                
+                    // 更新倒计时的函数
+                    function updateCountdown() {
+                        const now = new Date().getTime();
+                        const distance = targetDate - now;
+                
+                        // 计算剩余的时间（天、小时、分钟、秒）
+                        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                        // 在页面上显示倒计时
+                        document.getElementById('days').innerHTML = days + '<div class="countdown-label">天</div>';
+                        document.getElementById('hours').innerHTML = hours + '<div class="countdown-label">小时</div>';
+                        document.getElementById('minutes').innerHTML = minutes + '<div class="countdown-label">分钟</div>';
+                        document.getElementById('seconds').innerHTML = seconds + '<div class="countdown-label">秒</div>';
+                
+                        // 倒计时结束时显示提示信息
+                        if (distance < 0) {
+                            clearInterval(timer);
+                            document.getElementById('countdown').innerHTML = '倒计时结束！';
+                        }
+                    }
+                
+                    // 初始调用一次函数，确保页面加载时显示正确的倒计时
+                    updateCountdown();
+                
+                    // 每秒更新一次倒计时
+                    const timer = setInterval(updateCountdown, 1000);
+                </script>
+                <div style="width:100%; clear:both; height:5px;"></div>
+                <a href=""><img src="../img/baoming2.png"></a>
+                <div style="width:100%; clear:both; height:5px;"></div>
+                <a href=""><img src="../img/chaxun1.jpg"></a>
+                </div>
+            </div>
+            </div>
+</body>
+</html>
