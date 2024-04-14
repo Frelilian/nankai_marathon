@@ -1,0 +1,339 @@
+body{
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.divWebMenu{
+    width: 1200px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.menuItem{
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    padding:8px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #444;
+}
+.menuItem_0{ 
+    display: inline-block;
+    height:44px;
+   width:20%;
+  
+    color: #444;
+}
+.menuiItem_1{
+    display: inline-block;
+    height:44px;
+   width:20%;
+   
+    color: #444;
+}
+.menuiItem_2{ 
+    display: inline-block;
+    height:44px;
+   width:20%;
+    color: #444;
+}
+.menuiItem_3{ 
+    display: inline-block;
+     height:44px;
+   width:20%;
+    color: #444;
+}
+.menuiItem_4{ 
+    display: inline-block;
+    height:44px;
+   width:20%;
+    color: #444;
+}
+.menuItem_0 a {
+    text-decoration: none;
+    color:#444
+    
+}
+.menuiItem_1 a{ 
+    text-decoration: none;
+    color:#444
+ 
+}
+.menuiItem_2 a{ 
+    text-decoration: none;
+    color:#444
+ 
+}
+.menuiItem_3 a{ 
+    text-decoration: none;
+    color:#444
+ 
+}
+.menuiItem_4 a{ 
+    text-decoration: none;
+    color:#444
+ 
+}
+.menuItem_0 a:hover {
+    height: 100%;
+    background-color: #444;
+    color: #fff;
+}
+
+.menuiItem_1 a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.menuiItem_2 a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.menuiItem_3 a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.menuiItem_4 a:hover {
+    background-color: #444;
+    color:#fff;
+}
+.divPageMainMiddle {
+    position: relative;
+    min-height: 563px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+  
+  .slider {
+    display: inline-block;
+    transition: transform 0.5s ease;
+  }
+  
+  .slider img {
+    width: 1200px;
+    height: 500px;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  .news-block {
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .news-image {
+    flex: 0 0 auto;
+     /* 禁止图片伸缩 */
+    margin-right: 200px;
+ 
+  }
+
+  .news-title {
+    flex: 1; /* 填充剩余空间 */
+  }
+
+  .news-title h2 {
+    margin: 0;
+  }
+
+  .news-date {
+    font-style: italic;
+  }
+
+  .news-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    width: 1px;
+    background-color: #ccc;
+  }
+  .news{
+    display:block;
+
+  }
+  .divleft{
+    display: inline-block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #444;
+  }
+  .divright{
+    display: inline-block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #444;
+  }
+  .divleft a{
+    text-decoration: none;
+    color: #444;
+  }
+  .line{
+    width:100px;
+  }
+.aItem{
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #444;
+}
+.aItem a{
+    text-decoration: none;
+    color: #444;
+}
+.aItem a:hover{
+    text-decoration: none;
+    color: #444;
+    background-color: #444;
+    color: #fff;
+}
+.divleft a:hover{
+    text-decoration: none;
+    color: #444;
+    background-color: #444;
+    color: #fff;
+    background-color: #444;
+    color: #fff;
+}
+.spAnn{
+    text-decoration: none;
+     margin-right: 10px;
+}
+.date {
+    text-decoration: none;
+    color: #ffffff; /* 白色 */
+    font-size: 24px; /* 大小可根据需要调整 */
+    display: block; /* 换行显示 */
+}
+
+.year-month {
+    text-decoration: none;
+    color: #ffffff; /* 白色 */
+    font-size: 14px; /* 大小可根据需要调整 */
+}
+
+.day {
+    
+    color: #ffffff; /* 白色 */
+    font-size: 14px; /* 大小可根据需要调整 */
+    color: #ffffff; /* 白色 */
+    font-size: 14px; /* 大小可根据需要调整 */
+}
+.t {
+    display: inline-block; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 居中对齐 */
+    background-color: rgb(193, 85, 85);
+    width:90px;
+    text-decoration: none;
+}
+#flip-counter {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.flip-counter-digit {
+  display: inline-block;
+  width: 40px; /* 调整数字盒子的宽度 */
+  height: 50px; /* 调整数字盒子的高度 */
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin: 0 5px; /* 调整数字盒子之间的间距 */
+  line-height: 50px; /* 保持数字居中 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.flip-counter-separator {
+  font-size: 24px;
+  color: #333;
+}
+
+.flip-counter-label {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+#countdown {
+  
+  font-size: 24px;
+  color: #333;
+  background-color: #f4f4f4;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  padding-bottom: 5px;
+}
+
+.countdown-item {
+  margin: 0 5px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 24px;
+  width: 60px; /* 调整宽度 */
+  text-align: center;
+  display: inline-block;
+}
+
+.countdown-label {
+  font-size: 14px; /* 调整字体大小 */
+  margin-top: 5px; /* 调整与数字之间的间距 */
+}
+
