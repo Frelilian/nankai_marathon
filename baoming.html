@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+        <meta name="wap-font-scale" content="no">
+        <title>报名页</title>
+        <meta name="keywords" content="南开大学，马拉松，跑团，跑友，跑步，跑步社区，跑步爱好，跑步爱好社区">
+        <meta name="description" content="南开大学马拉松社官方网站">
+        <style type="text/css">.style{color:gray;}</style>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <style type="text/css" media="screen">#bxid1 {visibility:hidden}</style>
+        <style type="text/css" media="screen">#bxid1 {visibility:hidden}</style>
+        <style>
+            .xianlu {
+              overflow: hidden;
+            }
+            .divleft, .divright {
+              display: inline-block;
+              width: 20%;
+              margin-left: auto;
+              margin-right: auto;
+              color: #444;
+              white-space: nowrap;
+            }
+          </style>
+          <style> .divWebMenu .menuItem .aItem{ width:200px;}</style>
+    
+</head>
+
+    <body class = "bdIndex" style="background-color: f8f9fa;">
+        <div class="divPageMain" style = "background-image:none;">
+            <div style="background-color:#333; height:0px; padding:0px; width:100%; color:#FFF">
+                <div style="width:1200px; position:relative; margin-left:auto; margin-right:auto; font-size:14px">
+                </div>
+            </div>
+            <div style="background-color:#E50012; width:100%"><img src="..//img/改.png" width="100%"></div>
+            <div class = "divPageMainTop" style = "height:40px; background-color:#E8E8E8; border-bottom:#ccc solid 1px;">
+                    <div class="divWebMenu" style="width:100%; margin-left:auto; margin-right:auto;">
+                        <div class="menuItem"style="width:100%;">
+                            <div class="menuItem menuItem_0 menuItem_first" style="width:12%; margin-left: 21%; margin-right: auto;">
+                            <a class="aItem" href="../html/index.html">赛事首页</a>
+                            </div>
+                            <div class="menuItem menuiItem_1"style="width:12%">
+                            <a class="aItem" href="../html/index.html">参赛指南</a>
+                            </div>
+                            <div class="menuItem menuiItem_2" style="width:12%;">
+                            <a class="aItem" href="../html/index.html">赛事赞助</a>
+                            </div>
+                            <div class="menuItem menuiItem_3" style="width:12%">
+                            <a class="aItem" href="">在线报名</a>
+                            </div>
+                            <div class="menuItem menuiItem_4" style="width:12%;margin-right: 13%;">
+                            <a class="aItem" href="../html/index.html">联系我们</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="divPageMainMiddle" style="min-height: 463px;">
+                <div id="register"  style="text-align:center">
+                    <h2>赛事报名</h2><br>
+                    <form th:action="@{/security/create}" method="post" th:object="${user}">
+            
+            
+                        <input type="text" class="input1" name="userNo" placeholder="姓名">
+                        <br><br>
+            
+                        <input type="text" class="input2" name="userPwd" placeholder="身份证号">
+                        <br><br>
+            
+                        <input type="text" class="input3" name="userName" placeholder="年龄">
+                        <br><br>
+            
+                        <input type="text" class="input4" name="userPhonenumber" placeholder="手机号">
+                        <br><br>
+                        <h3>选择你报名的赛事：</h3>
+                        <select id="fruit-select" name="fruit">
+                            <option value="apple">全程马拉松（42.195km）</option>
+                            <option value="banana">半程马拉松（21.0975km）</option>
+                            <option value="orange">亲子马拉松（5km）</option>
+                            
+                        </select>
+                        <br><br>
+            
+                        <button class="btn btn-primary" type="submit">确定</button>
+            
+                    </form>
+                </div>
+            </div>
+            <center>
+                <h5>南开大学马拉松赛事-测试版</h5>
+
+    <h5>(版本:Beta1.0 Build:#1 2024-05-23)</h5>
+            </center>
+</body>
+</html>
