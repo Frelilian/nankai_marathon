@@ -8,7 +8,7 @@
         <meta name="keywords" content="南开大学，马拉松，跑团，跑友，跑步，跑步社区，跑步爱好，跑步爱好社区">
         <meta name="description" content="南开大学马拉松社官方网站">
         <style type="text/css">.style{color:gray;}</style>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
         <style type="text/css" media="screen">#bxid1 {visibility:hidden}</style>
         <style type="text/css" media="screen">#bxid1 {visibility:hidden}</style>
         <style>
@@ -34,24 +34,24 @@
                 <div style="width:1200px; position:relative; margin-left:auto; margin-right:auto; font-size:14px">
                 </div>
             </div>
-            <div style="background-color:#E50012; width:100%"><img src="img/改.png" width="100%"></div>
+            <div style="background-color:#E50012; width:100%"><img src="..//img/改.png" width="100%"></div>
             <div class = "divPageMainTop" style = "height:40px; background-color:#E8E8E8; border-bottom:#ccc solid 1px;">
                     <div class="divWebMenu" style="width:100%; margin-left:auto; margin-right:auto;">
                         <div class="menuItem"style="width:100%;">
                             <div class="menuItem menuItem_0 menuItem_first" style="width:12%; margin-left: 21%; margin-right: auto;">
-                            <a class="aItem" href="index.html">赛事首页</a>
+                            <a class="aItem" href="../html/index.html">赛事首页</a>
                             </div>
                             <div class="menuItem menuiItem_1"style="width:12%">
-                            <a class="aItem" href="index.html">参赛指南</a>
+                            <a class="aItem" href="../html/index.html">参赛指南</a>
                             </div>
                             <div class="menuItem menuiItem_2" style="width:12%;">
-                            <a class="aItem" href="index.html">赛事赞助</a>
+                            <a class="aItem" href="../html/index.html">赛事赞助</a>
                             </div>
                             <div class="menuItem menuiItem_3" style="width:12%">
                             <a class="aItem" href="">在线报名</a>
                             </div>
                             <div class="menuItem menuiItem_4" style="width:12%;margin-right: 13%;">
-                            <a class="aItem" href="index.html">联系我们</a>
+                            <a class="aItem" href="../html/index.html">联系我们</a>
                             </div>
                         </div>
                     </div>
@@ -59,17 +59,40 @@
             <div class="divPageMainMiddle" style="min-height: 463px;">
                 <div id="register"  style="text-align:center">
                     <h2>报名查询</h2><br>
-                    <form th:action="@{/security/create}" method="post" th:object="${user}">
-        
-                        <h3>请输入你的身份证号：</h3>
-                        <input type="text" class="input2" name="userPwd" placeholder="身份证号">
-                        <br><br>
-            
-                   
-            
-                        <button class="btn btn-primary" type="submit">确定</button>
-            
+                    <form id="queryForm">
+                        <input type="text" id="queryUserID" placeholder="请输入身份证号">
+                        <button type="button" onclick="queryProject()">查询</button>
                     </form>
+                    
+                    <div id="queryResult"></div>
+                    
+                    <script>
+                        // 映射关系，将项目的内部标识映射为项目的名称
+                      var projectNames = {
+                        "quancheng": "全程马拉松（42.195km）",
+                            "bancheng": "半程马拉松（21.0975km）",
+                         "qinzi": "亲子马拉松（5km）"
+                            };
+                            function queryProject() {
+        var queryUserID = document.getElementById("queryUserID").value;
+        var userDataString = localStorage.getItem("userData");
+        if (userDataString) {
+            var userData = JSON.parse(userDataString);
+            if (userData.userID === queryUserID) {
+                var projectName = projectNames[userData.project];
+                if (projectName) {
+                    document.getElementById("queryResult").innerHTML = "根据身份证号 " + queryUserID + " 查询到的报名项目：" + projectName;
+                } else {
+                    document.getElementById("queryResult").innerHTML = "未找到与身份证号 " + queryUserID + " 相关的报名项目。";
+                }
+            } else {
+                document.getElementById("queryResult").innerHTML = "未找到与身份证号 " + queryUserID + " 相关的报名项目。";
+            }
+        } else {
+            document.getElementById("queryResult").innerHTML = "未保存任何用户数据。";
+        }
+    }
+                    </script>
                 </div>
             </div>
             <center>
